@@ -233,7 +233,7 @@ const STAGES: Question[] = [
     question: "What is the name of this person?",
     image: "bs.png",
     musicVideo: "Bruises and Stains",
-    hint: "Does he climb the fire escape?",
+    hint: "Maybe it's not, not what you want it to be?",
   },
   {
     question: "What is the name of this person?",
