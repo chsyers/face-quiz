@@ -18,7 +18,7 @@ interface StageResult {
 
 const OPTIONS = [
   "Academy Street",
-  "Second Best",
+  "Bruises and Stains",
   "Belong Together",
   "Curls In the Wind",
   "Company",
@@ -44,7 +44,16 @@ const STAGES: Question[] = [
   {
     question: "What is the name of this person?",
     image: "q1.jpeg",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
+    answers: [
+      "Mark Ambor",
+      "Mark",
+      "Ambor",
+      "Mark A",
+      "WGB",
+      "Mark Gregory Damboragian",
+      "Damboragian",
+      "Mark Damboragian",
+    ],
     answer: "Mark Ambor",
     hint: "I'm disappointed that you need a hint for this one.",
   },
@@ -101,7 +110,15 @@ const STAGES: Question[] = [
   {
     question: "What is the name of this person?",
     image: "alex2.png",
-    answers: ["alex", "alexander", "alek", "alex maddon", "maddon", "alexander maddon", "alek maddon"],
+    answers: [
+      "alex",
+      "alexander",
+      "alek",
+      "alex maddon",
+      "maddon",
+      "alexander maddon",
+      "alek maddon",
+    ],
     answer: "Alex Maddon (Keyboard)",
     hint: "Enjoyer of cupcakes!",
   },
@@ -126,7 +143,15 @@ const STAGES: Question[] = [
   {
     question: "What is the name of this person?",
     image: "alex.png",
-    answers: ["alex", "alexander", "alek", "alex mak", "alek mak", "alexander mak", "mak"],
+    answers: [
+      "alex",
+      "alexander",
+      "alek",
+      "alex mak",
+      "alek mak",
+      "alexander mak",
+      "mak",
+    ],
     answer: "Alex (Guitar)",
     hint: "He rocks out on the guitar!",
   },
@@ -207,7 +232,7 @@ const STAGES: Question[] = [
   {
     question: "What is the name of this person?",
     image: "bs.png",
-    musicVideo: "Second Best",
+    musicVideo: "Bruises and Stains",
     hint: "Does he climb the fire escape?",
   },
   {
