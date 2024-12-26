@@ -555,7 +555,7 @@ function getResult(results: StageResult[]): string {
     0
   );
   const lines = [
-    "2024 Rockwood Face Quiz 🦋",
+    "Rockwood Face Quiz 🦋",
     `${totalCorrect}/${total} Points`,
     `Legend Rating: ${getLegendRating(totalCorrect, total)}`,
     "",
