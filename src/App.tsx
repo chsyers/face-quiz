@@ -82,7 +82,7 @@ const STAGES: Question[] = [
   {
     question: "What is the name of this person?",
     image: "eric.png",
-    answers: ["Eric Hughes", "Eric", "Hughes", "erik"],
+    answers: ["Eric Hughes", "Eric", "Hughes", "erik", "erik hughes"],
     answer: "Eric Hughes",
     hint: "Childhood friend of Mark's who helps make the magic happen on tour!",
   },
@@ -101,8 +101,8 @@ const STAGES: Question[] = [
   {
     question: "What is the name of this person?",
     image: "alex2.png",
-    answers: ["alex", "alexander", "alek"],
-    answer: "Alex (Keyboard)",
+    answers: ["alex", "alexander", "alek", "alex maddon", "maddon", "alexander maddon", "alek maddon"],
+    answer: "Alex Maddon (Keyboard)",
     hint: "Enjoyer of cupcakes!",
   },
   {
@@ -126,7 +126,7 @@ const STAGES: Question[] = [
   {
     question: "What is the name of this person?",
     image: "alex.png",
-    answers: ["alex", "alexander", "alek"],
+    answers: ["alex", "alexander", "alek", "alex mak", "alek mak", "alexander mak", "mak"],
     answer: "Alex (Guitar)",
     hint: "He rocks out on the guitar!",
   },
@@ -200,8 +200,8 @@ const STAGES: Question[] = [
   {
     question: "What is the name of this person?",
     image: "parker.png",
-    answers: ["Park", "Parker"],
-    answer: "Parker (Drums)",
+    answers: ["Park", "Parker", "Parker Sundby", "Sundby", "Park Sundby"],
+    answer: "Parker Sundby (Drums)",
     hint: "All-star drummer",
   },
   {
@@ -272,7 +272,7 @@ function App() {
           alt="logo"
         />
         <h1
-          style={{ marginTop: "-20px", fontSize: stage >= 0 ? "24px" : "48px" }}
+          style={{ marginTop: "0px", fontSize: stage >= 0 ? "24px" : "48px" }}
         >
           Rockwood Face Quiz
         </h1>
