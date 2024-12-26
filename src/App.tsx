@@ -4,8 +4,8 @@ import "./App.css";
 interface Question {
   question: string;
   image: string;
-  answers: string[];
-  answer: string;
+  answers?: string[];
+  answer?: string;
   options?: string[];
   musicVideo?: string;
   hint: string;
@@ -51,8 +51,6 @@ const STAGES: Question[] = [
   {
     question: "What is the name of this person?",
     image: "waves.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Waves",
     hint: "It looks like he has some baggage on his shoulders in this one...",
   },
@@ -66,24 +64,18 @@ const STAGES: Question[] = [
   {
     question: "What is the name of this person?",
     image: "the_long_way.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "The Long Way",
     hint: "Is he in Brooklyn or in Broadway?",
   },
   {
     question: "What is the name of this person?",
     image: "stb.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Someone That's Better",
     hint: "I don't think he's in a living room in this one...",
   },
   {
     question: "What is the name of this person?",
     image: "sitl.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Sky is the Limit",
     hint: "Who wouldn't want to be taken out by him?",
   },
@@ -97,16 +89,12 @@ const STAGES: Question[] = [
   {
     question: "What is the name of this person?",
     image: "sb.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Second Best",
     hint: "I didn't think Amsterdam had fire escapes...",
   },
   {
     question: "What is the name of this person?",
     image: "rrr.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Run Rudolph Run",
     hint: "🎄",
   },
@@ -120,24 +108,18 @@ const STAGES: Question[] = [
   {
     question: "What is the name of this person?",
     image: "ow.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Our Way",
     hint: "Damn you, moonlight!",
   },
   {
     question: "What is the name of this person?",
     image: "ml.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "My Love!",
     hint: "My Quiz!",
   },
   {
     question: "What is the name of this person?",
     image: "iua.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "It's Us Again",
     hint: "Really?",
   },
@@ -151,56 +133,42 @@ const STAGES: Question[] = [
   {
     question: "What is the name of this person?",
     image: "ihiawo.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "I Hope It All Works Out",
     hint: "It looks like a very lonely street...",
   },
   {
     question: "What is the name of this person?",
     image: "hw.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Hello World",
     hint: "Staring at the walls of his bedroom...",
   },
   {
     question: "What is the name of this person?",
     image: "htisly.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Hate That I Still Love You",
     hint: "Are you staring at the same moon?",
   },
   {
     question: "What is the name of this person?",
     image: "htac.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Hair Toss, Arms Crossed",
     hint: "He did that turn round, walk out",
   },
   {
     question: "What is the name of this person?",
     image: "gtb.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Good To Be",
     hint: "👏🏻👏🏼👏🏾",
   },
   {
     question: "What is the name of this person?",
     image: "fever.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Fever",
     hint: "I'm feeling hot...",
   },
   {
     question: "What is the name of this person?",
     image: "dyw.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Don't You Worry",
     hint: "We'll figure it out...",
   },
@@ -214,24 +182,18 @@ const STAGES: Question[] = [
   {
     question: "What is the name of this person?",
     image: "company.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Company",
     hint: "Life is better with some...",
   },
   {
     question: "What is the name of this person?",
     image: "citw.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Curls In the Wind",
     hint: "His hair is looking extra curly in this one...",
   },
   {
     question: "What is the name of this person?",
     image: "bt.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Belong Together",
     hint: "🫐🦋",
   },
@@ -245,16 +207,12 @@ const STAGES: Question[] = [
   {
     question: "What is the name of this person?",
     image: "bs.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Second Best",
     hint: "Does he climb the fire escape?",
   },
   {
     question: "What is the name of this person?",
     image: "as.png",
-    answers: ["Mark Ambor", "Mark", "Ambor", "Mark A", "WGB"],
-    answer: "Mark Ambor",
     musicVideo: "Academy Street",
     hint: "Is this the parking of Foxwoods?",
   },
@@ -271,37 +229,29 @@ function App() {
   const [musicVideoAnswer, setMusicVideoAnswer] = React.useState("");
 
   const handleSubmit = () => {
-    const personCorrect = STAGES[stage].answers
-      .map((answer) => answer.toLowerCase())
-      .includes(userAnswer.trim().toLowerCase());
+    const hasAnswers = !!STAGES[stage].answers;
+    const personCorrect =
+      hasAnswers &&
+      (STAGES[stage].answers ?? [])
+        .map((answer) => answer.toLowerCase())
+        .includes(userAnswer.trim().toLowerCase());
 
     const hasMusicVideo = !!STAGES[stage].musicVideo;
     const musicVideoCorrect = STAGES[stage].musicVideo === musicVideoAnswer;
 
-    if (personCorrect && hasMusicVideo && musicVideoCorrect) {
-      setStatus("Correct!");
-      setResults([...results, { usedHint: showHint, results: [true, true] }]);
-    }
-    if (personCorrect && !hasMusicVideo) {
+    if (hasAnswers && personCorrect) {
       setStatus("Correct!");
       setResults([...results, { usedHint: showHint, results: [true] }]);
     }
-    if (personCorrect && hasMusicVideo && !musicVideoCorrect) {
-      setStatus(
-        "Partially correct! You got the face right, but the video wrong."
-      );
-      setResults([...results, { usedHint: showHint, results: [true, false] }]);
-    }
-    if (!personCorrect && hasMusicVideo && musicVideoCorrect) {
-      setStatus(
-        "Partially correct! You got the video right, but the face wrong."
-      );
-      setResults([...results, { usedHint: showHint, results: [false, true] }]);
-    }
-    if (!personCorrect && hasMusicVideo && !musicVideoCorrect) {
+    if (hasAnswers && !personCorrect) {
       setStatus("Wrong!");
-      setResults([...results, { usedHint: showHint, results: [false, false] }]);
-    } else if (!personCorrect && !hasMusicVideo) {
+      setResults([...results, { usedHint: showHint, results: [false] }]);
+    }
+    if (hasMusicVideo && musicVideoCorrect) {
+      setStatus("Correct!");
+      setResults([...results, { usedHint: showHint, results: [true] }]);
+    }
+    if (hasMusicVideo && !musicVideoCorrect) {
       setStatus("Wrong!");
       setResults([...results, { usedHint: showHint, results: [false] }]);
     }
@@ -334,7 +284,7 @@ function App() {
                 <div
                   style={{
                     height: "10px",
-                    width: "100%",
+                    width: "300px",
                     backgroundColor: "#e0e0df",
                     borderRadius: "5px",
                     marginBottom: "4px",
@@ -381,23 +331,27 @@ function App() {
                   </div>
                 )}
               </div>
-              <label htmlFor="userAnswer" style={{ fontSize: "16px" }}>
-                {STAGES[stage].question}
-              </label>
-              <div className="space-between">
-                <input
-                  id="userAnswer"
-                  type="text"
-                  value={userAnswer}
-                  onChange={(e) => setUserAnswer(e.target.value)}
-                  disabled={!!status}
-                  onKeyPress={(e) => {
-                    if (e.key === "Enter") {
-                      handleSubmit();
-                    }
-                  }}
-                />
-              </div>
+              {!!STAGES[stage].answers && (
+                <>
+                  <label htmlFor="userAnswer" style={{ fontSize: "16px" }}>
+                    {STAGES[stage].question}
+                  </label>
+                  <div className="space-between">
+                    <input
+                      id="userAnswer"
+                      type="text"
+                      value={userAnswer}
+                      onChange={(e) => setUserAnswer(e.target.value)}
+                      disabled={!!status}
+                      onKeyPress={(e) => {
+                        if (e.key === "Enter") {
+                          handleSubmit();
+                        }
+                      }}
+                    />
+                  </div>
+                </>
+              )}
               {STAGES[stage].musicVideo && (
                 <div>
                   <label style={{ marginTop: "8px", fontSize: "16px" }}>
@@ -431,16 +385,12 @@ function App() {
               >
                 <span
                   style={{
-                    color: status.startsWith("Correct")
-                      ? "green"
-                      : status.startsWith("Partially")
-                      ? "orange"
-                      : "red",
+                    color: status.startsWith("Correct") ? "green" : "red",
                   }}
                 >
                   {status}
                 </span>{" "}
-                This is {STAGES[stage].answer}
+                This is {STAGES[stage].answer ?? "Mark Ambor"}
                 {STAGES[stage].musicVideo
                   ? ` in ${STAGES[stage].musicVideo}`
                   : ""}
